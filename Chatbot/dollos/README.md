@@ -1,10 +1,9 @@
-## Dollos Chatbot
-# beta v.0.3
+# Dollos Chatbot(beta) v.0.3
 
 Ini bot 
 
-Gunakan perintah ini untuk shorcut nya:
-  * dffsf
+## Gunakan perintah ini untuk shorcut nya:
+  * _help
 
 [Demo](https://sylviapap.github.io/chatbot/)
 
