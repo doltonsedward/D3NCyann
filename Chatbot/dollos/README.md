@@ -2,7 +2,8 @@
 
 Ini bot 
 
-Enjoy!
+Gunakan perintah ini untuk shorcut nya:
+  *dffsf
 
 [Demo](https://sylviapap.github.io/chatbot/)
 
