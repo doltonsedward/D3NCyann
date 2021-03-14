@@ -3,7 +3,7 @@
 Ini bot 
 
 Gunakan perintah ini untuk shorcut nya:
-  *dffsf
+  * dffsf
 
 [Demo](https://sylviapap.github.io/chatbot/)
 
