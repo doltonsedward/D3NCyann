@@ -1,6 +1,7 @@
 # Dollos Chatbot(beta) v.0.3
+Ini bot dari saya sendiri tapi dalam proses pengembangan
 
-Ini bot dari dev kelas teri yang bernama **Doltons Edward Nicholas**
+
 
 ## Gunakan perintah ini untuk shorcut nya:
   * **_help** untuk memperlihatkan semua shorcut
@@ -9,6 +10,6 @@ Ini bot dari dev kelas teri yang bernama **Doltons Edward Nicholas**
 
 
 
-[Demo](https://d3ncyann.github.io/D3NCyann/Chatbot/dollos)
 
+[Demo](https://d3ncyann.github.io/D3NCyann/Chatbot/dollos)
 [Blog post](https://d3ncyan.blogspot.com)
