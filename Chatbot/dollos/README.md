@@ -1,4 +1,5 @@
-# JavaScript Chatbot 
+## Dollos Chatbot
+# beta v.0.3
 
 Ini bot 
 
