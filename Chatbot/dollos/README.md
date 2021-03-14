@@ -3,7 +3,8 @@
 Ini bot 
 
 ## Gunakan perintah ini untuk shorcut nya:
-  * _help
+  * **_help**
+  * **_bucin** 
 
 [Demo](https://sylviapap.github.io/chatbot/)
 
