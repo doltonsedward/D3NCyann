@@ -7,6 +7,12 @@ document.addEventListener("DOMContentLoaded", () => {
       output(input);
     }
   });
+  const submitButton = document.getElementById("submitBtn");
+  submitButton.addEventListener("click", (sbmit) => {
+    let input = inputField.value;
+    inputField.value = "";
+    output(input);
+  });
 });
 
 function output(input) {
@@ -23,12 +29,20 @@ function output(input) {
     .replace(/ anu/g, "") // anu itu -> itu
     .replace(/anu /g, "")
     .replace(/ anu /g, "")
+    .replace(/ si/g, "")
     .replace(/avv/g, "")
+    .replace(/ kabs/g, "")
+
+    // kamu
+    .replace(/ km/g, "kamu")
+    .replace(/ kmu/g, "kamu")
+
+    .replace(/wkwk/g, "")
     .replace(/kntl /g, "")
     .replace(/ kntl/g, "")
-    .replace(/ g /g, "")
-    .replace(/lu /g, "kamu")
-    .replace(/u /g, "kamu")
+    .replace(/ bot/g, "")
+    .replace(/ lu/g, "kamu")
+    .replace(/ u /g, "kamu")
     .replace(/[?]/g, "")
     .replace(/ [?]/g, "");
 
@@ -44,6 +58,7 @@ function output(input) {
     // Jika semua salah alihkan percakapan ke alternative / teks random
     product = alternative[Math.floor(Math.random() * alternative.length)];
   }
+
 
   // Update DOM
   addChat(input, product);
@@ -99,3 +114,4 @@ function addChat(input, product) {
     textToSpeech(product)
   }, 2000)
 }
+
