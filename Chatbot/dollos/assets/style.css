@@ -119,6 +119,21 @@ body#chatbot {
 	border: none;
 }
 
+.containers .chats .bottomChats #submitBtn {
+	margin-left: 15px;
+	position: relative;
+	width: 30px;
+	height: 30px;
+	background-color: var(--color-default);
+}
+
+.containers .chats .bottomChats #submitBtn svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 .messages {
 	display: flex;
 	flex-direction: column;
