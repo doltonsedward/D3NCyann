@@ -8,7 +8,7 @@ Ini bot dari saya sendiri tapi dalam proses pengembangan
   * **_jam** untuk memperlihatkan jam sekarang
   * **_bucin** untuk percakapan bucin :v 
   * **_q** *(planning)* untuk quotes 
-  * ** _qmem** *(planning)* untuk quotes meme
+  * **_qmem** *(planning)* untuk quotes meme
 
 
 
