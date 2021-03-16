@@ -6,13 +6,12 @@
 	<meta name="description" content="Bot javascript" />
 	<title>Chatbot</title>
 	<link rel="icon" href="assets/bot.png" />
-	<link rel="stylesheet" href="assets/css/responsif.css" />
 	<link rel="stylesheet" href="assets/style.css" />
-	<link rel="stylesheet" href="assets/css/shortcut.css" />
 </head>
 
 <body id="chatbot">
-	<h1 align="center">Aplikasi chatbot</h1>
+	<h1 align="center" class="title">DollosChatbot <p>beta v.0.35</p>
+	</h1>
 	<div id="container" class="containers">
 		<img id="pict_bot" src="assets/bot.png" alt="image robot" height="300px" />
 		<div id="chat" class="chats">
@@ -21,12 +20,26 @@
 				<div class="left_item">
 					<p class="logo">App</p>
 				</div>
-				<div class="right_item">
-					<div>
-						kdslfjs
+				<div class="right_item d-flex-only">
+					<div id="theme" class="cursor-pointer">
+						<div onclick="setDarkMode(true)" id="darkBtn" class=""><img src="assets/img/moon.svg" alt="">
+						</div>
+						<div onclick="setDarkMode(false)" id="lightBtn" class="hidden"><img src="assets/img/sun.svg"
+								alt="">
+						</div>
+					</div>
+					<div id="menuItem" class="cursor-pointer">
+						<div onclick="menuItem()">Menu</div>
 					</div>
 				</div>
 			</header>
+
+			<div id="box_setting" class="settings">
+				<div class="center-item item">
+					<img src="assets/img/process.svg" alt="Processing" />
+					<p align="center">Masih di proses</p>
+				</div>
+			</div>
 			<div id="messages" class="messages">
 				<div id="bot" class="bot response">
 					<span>Halo warganet!<br>ketikkan _help untuk beberapa shorcut</span>
@@ -48,9 +61,19 @@
 			</div>
 		</div>
 	</div>
+
+	<script>
+		function menuItem() {
+			bxSetting = document.getElementById('box_setting');
+			bxSetting.classList.toggle("active");
+		}
+	</script>
+	<script type="text/javascript" src="assets/js/index.js"></script>
+	<script type="text/javascript" src="assets/js/prompt.js"></script>
+	<script type="text/javascript" src="assets/js/otak.js"></script>
+	<script type="text/javascript" src="assets/js/speech.js"></script>
+	<script type="text/javascript" src="assets/js/darkmode.js"></script>
 </body>
-<script type="text/javascript" src="assets/js/index.js"></script>
-<script type="text/javascript" src="assets/js/otak.js"></script>
-<script type="text/javascript" src="assets/js/speech.js"></script>
+
 
 </html>
