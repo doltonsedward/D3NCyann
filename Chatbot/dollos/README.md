@@ -6,7 +6,9 @@ Ini bot dari saya sendiri tapi dalam proses pengembangan
 ## Gunakan perintah ini untuk shorcut nya:
   * **_help** untuk memperlihatkan semua shorcut
   * **_jam** untuk memperlihatkan jam sekarang
-  * **_bucin (planning)** untuk percakapan bucin :v 
+  * **_bucin** untuk percakapan bucin :v 
+  * **_q** *(planning)* untuk quotes 
+  * ** _qmem untuk quotes meme
 
 
 
