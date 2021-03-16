@@ -1,30 +1,79 @@
 @import 'https://fonts.googleapis.com/css?family=Poppins';
+@import 'css/responsif.css';
+@import 'css/shortcut.css';
 
 :root {
 	/* warna */
+	--color-theme: #313444;
 	--white: #ffffff;
+	--white-low: rgba(255, 255, 255, 0.712);
 	--black: #000000;
+	--dark-smooth: #5d5f6b;
+	--blue-responsif: #001f3f;
+	--gray-cool: #c4c4c4;
+	--gray-smooth: #657477;
+	--gray-smoothh: #dedede;
 	--gray-responsif: rgba( 255, 255, 255, 0.12 );
+	--black-responsif: rgba( 0, 0, 0, 0.12 );
+	--dark-responsif: rgba(83, 80, 89, 0.747);
 	--whitesmoke: #f5f5f5;
+	--neumorphism: #e0e0e0;
+	--gray-dark: #2a2c3a;
 
 	/* warna juga */
-	--color-default: var(--whitesmoke);
-	--color-scrollbar: var(--gray-responsif);
+	--color-default: var(--gray-dark);
+	--color-scrollbar: var(--gray-smooth);
+	--color-chats-setting: var(--white-low);
+	--color-send: var(--gray-dark);
 
 	/* background */
-	--background-theme: #313444;
+	--background-theme: var(--neumorphism);
+	--background-header-chats: var(--dark-smooth);
+	--background-header-items: var(--gray-responsif);
+	--background-chats-setting: var(--color-theme);
+
+	/* border */
+	--border-default: 1px solid rgba(0, 0, 0, 0.12);
+
+	/* user dan bot */
+	--color-user-chat: var(--neumorphism);
+	--color-bot-chat: #454545;
+	--background-user-chat: var(--gray-smooth);
+	--background-bot-chat: #bababa;
+
+	/* shadow */
+	--shadow-theme:  5px 5px 10px #bebebe,
+	-5px -5px 10px #ffffff;
+	--shadow-fill-theme:  0 0 3px var(--black-responsif);
+	--shadow-header-chats: 0 0 6px var(--black);
+}
+
+.darkmode {
+	--color-default: var(--whitesmoke);
+	--color-scrollbar: var(--gray-responsif);
+	--color-chats-setting: var(--neumorphism);
+	--color-send: var(--neumorphism);
+
+	/* background */
+	--background-theme: var(--color-theme);
+	--background-header-chats: var(--dark-smooth);
+	--background-header-items: var(--dark-responsif);
+	--background-chats-setting: var(--whitesmoke);
+
+	/* border */
+	--border-default: 1px solid rgba( 255, 255, 255, 0.12 );
 
 	/* user dan bot */
 	--color-user-chat: #2a2c3a;
 	--color-bot-chat: var(--whitesmoke);
-	--background-user-chat: var(--whitesmoke);
+	--background-user-chat: var(--gray-cool);
 	--background-bot-chat: var(--gray-responsif);
 
 	/* shadow */
 	--shadow-theme:  5px 5px 10px #2a2c3a,
 	-5px -5px 10px #383c4e;
 	--shadow-fill-theme:  0 0 3px var(--gray-responsif);
-	
+	--shadow-header-chats: 0 0 6px var(--black);
 }
 
 ::-webkit-input-placeholder {color: .711}
@@ -41,7 +90,7 @@ html {
 }
 
 body#chatbot {
-	padding: 15px 0;
+	padding: 10px 0;
 	color: var(--color-default);
 	background: var(--background-theme);
 	backdrop-filter: blur( 4px );
@@ -49,7 +98,13 @@ body#chatbot {
 	user-select: none;
 }
 
+#chatbot .title p {
+	font-size: 10px;
+	opacity: 0.49;
+}
+
 #chatbot span {
+	font-family: 'Poppins';
 	margin-right: 15px;
 	margin-left: 15px;
 }
@@ -62,7 +117,9 @@ body#chatbot {
 	height: 100%;
 }
 
-#chatbot .containers img {
+#chatbot .containers img#pict_bot,
+#chatbot .containers .messages .user img,
+#chatbot .containers .messages .bot img {
 	border-radius: 50%;
 	box-shadow: var(--shadow-theme);
 }
@@ -79,25 +136,58 @@ body#chatbot {
 	backdrop-filter: blur( 4px );
 	-webkit-backdrop-filter: blur( 4px );
 	border-radius: 10px;
-	border: 1px solid rgba( 255, 255, 255, 0.12 );
+	border: var(--border-default);
 	box-shadow:  var(--shadow-theme);
 }
 
 /* masih rencana */
+.containers .chats header,
+.containers .chats .settings
+{color: var(--color-chats-setting)}
 .containers .chats header {
-	display: none; /* display: flex; */
+	background-color: var(--background-header-chats);
+	height: 38px;
+	/*display: none;*/ display: flex;
 	justify-content: space-between;
+	box-shadow: var(--shadow-header-chats);
+	z-index: 25;
 }
+
+.containers .chats header .right_item #menuItem {
+	color: var(--color-chats-setting);
+	margin-left: 20px;
+}
+
+.hidden {display: none}
 
 .containers .chats header > div {
 	padding: 8px;
-	background-color: black;
+	background-color: var(--background-header-items);
 }
 /* tutup */
 
+.containers .chats .settings.active {display: block}
+.containers .chats .settings {
+	padding: 20px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 95%;
+	background-color: var(--background-chats-setting);
+	display: none;
+	z-index: 20;
+}
+
+.containers .chats .settings .item img {width: 200px}
+.containers .chats .settings .item p::after {
+	position: relative;
+	content: "";
+	animation: teksLoading 2s ease-in-out infinite;
+}
+
 .containers .chats .bottomChats {
 	padding: 10px;
-	border: 1px solid rgba( 255, 255, 255, 0.12 );
+	border: var(--border-default);
 }
  
 .containers .chats .bottomChats .inputStyle { 
@@ -124,7 +214,8 @@ body#chatbot {
 	position: relative;
 	width: 30px;
 	height: 30px;
-	background-color: var(--color-default);
+	background-color: var(--background-theme);
+	box-shadow: var(--shadow-theme);
 }
 
 .containers .chats .bottomChats #submitBtn svg {
@@ -132,6 +223,10 @@ body#chatbot {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+.containers .chats .bottomChats #submitBtn svg path {
+	fill: var(--color-send);
 }
 
 .messages {
@@ -176,12 +271,22 @@ body#chatbot {
 .response {
 	display: flex;
 	align-items: center;
-	margin: 1%;
+	margin: 2% 1%;
+}
+
+
+
+@keyframes teksLoading {
+	35% {
+		content: ".";
+	}
+	75% {
+		content: "..";
+	}
 }
 
 
 /* hape */
-
 @media (max-width: 880px) {
   	.containers {
 		flex-direction: column; 
