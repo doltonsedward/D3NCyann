@@ -29,21 +29,37 @@ function output(input) {
     .replace(/ anu/g, "") // anu itu -> itu
     .replace(/anu /g, "")
     .replace(/ anu /g, "")
-    .replace(/ si/g, "")
+    .replace(/ sih/g, "")
     .replace(/avv/g, "")
     .replace(/ kabs/g, "")
+    .replace(/okay/g, "oke")
 
     // kamu
-    .replace(/ km/g, "kamu")
-    .replace(/ kmu/g, "kamu")
-
-    .replace(/wkwk/g, "")
-    .replace(/kntl /g, "")
-    .replace(/ kntl/g, "")
-    .replace(/ bot/g, "")
+    .replace(/ km/g, " kamu")
+    .replace(/ kmu/g, " kamu")
+    .replace(/ kau/g, " kamu")
+    .replace(/ mu/g, " kamu")
     .replace(/ lu/g, "kamu")
     .replace(/ u /g, "kamu")
+    .replace(/bang /g, "bro")
+    .replace(/jadi /g, "")
+
+    .replace(/wkwk/g, "")
+    .replace(/ kok/g, "")
+    .replace(/ saja/g, "")
+    .replace(/ sj/g, "")
+    .replace(/ aja/g, "")
+    .replace(/ uga/g, " juga")
+    .replace(/wah /g, "")
+
+    .replace(/kntl /g, "")
+    .replace(/ kntl/g, "")
+    .replace(/njir/g, "")
+    .replace(/njir lah/g, "")
+
+    .replace(/ bot/g, "")
     .replace(/[?]/g, "")
+    .replace(/ v/g, "") // untuk chat seperti -> :v
     .replace(/ [?]/g, "");
 
   if (compare(prompts, replies, teks)) {
@@ -51,9 +67,6 @@ function output(input) {
     product = compare(prompts, replies, teks);
   } else if (teks.match(/(makasih|thanks)/gi)) {
     product = "Sama sama"
-  } else if (teks.match(/(corona|covid|virus)/gi)) {
-    // Jika tidak ada yang sesuai tapi keyword corona virus masuk maka alihkan percakapan ke coronavirus
-    product = coronavirus[Math.floor(Math.random() * coronavirus.length)];
   } else {
     // Jika semua salah alihkan percakapan ke alternative / teks random
     product = alternative[Math.floor(Math.random() * alternative.length)];
