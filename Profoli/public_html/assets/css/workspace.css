@@ -1,0 +1,36 @@
+.header_of_lintree_local .heading {
+    color: var(--color-theme);
+    font-size: 1.2em;
+}
+
+.header_of_lintree_local .subheading { font-size: 1.0em }
+.list_of_content_linktree_local li {
+    text-align: center;
+    width: 500px;
+    max-width: 95%;
+    margin: 15px auto;
+}
+
+.list_of_content_linktree_local a {
+    color: var(--color-text-neumorphism);
+    display: block;
+    padding: 20px 0;
+}
+
+.list_of_sosmed_linktree_local {
+    display: flex;
+    justify-content: center;
+}
+
+.list_of_sosmed_linktree_local li a { padding: 0 10px }
+.list_of_sosmed_linktree_local img {
+    width: 25px;
+    height: 25px;
+}
+
+.real-btn {
+    background-color: var(--color-theme);
+    box-shadow: 0 6px var(--effect-real-button);
+}
+
+.real-btn:hover { box-shadow: 0 0 var(--effect-real-button), inset 5px 5px 10px var(--effect-real-button) }

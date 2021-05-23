@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profoli</title>
+  <link rel="stylesheet" href="../assets/css/responsif.css" />
+  <link rel="stylesheet" href="/assets/style.css" />
+  <link rel="stylesheet" href="assets/css/storage.css" />
+  <link rel="stylesheet" href="assets/css/shortcut.css" />
+</head>
+
+<body>
+  <header>
+    <div class="inner width-responsif mrl-auto ptb-l d-flex-vertical">
+      <p class="Logo">Dollong</p>
+      <div class="m_button" id="btnNav">
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </div>
+
+    </div>
+  </header>
+  <nav id="navi">
+    <ul class="">
+      <li class="b-radius-l"><a href="index.html">Home</a></li>
+      <li class="b-radius-l active click-effect"><a href="portofolio.html">Portofolio</a></li>
+      <li class="b-radius-l"><a href="">Blog</a></li>
+      <li class="b-radius-l"><a href="">Service</a></li>
+      <li class="b-radius-l"><a href="">About</a></li>
+      <li class="b-radius-l"><a href="">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="inner width-responsif mrl-auto ptb-l">
+    <div>
+      <h1>Galery</h1>
+      <ul class="list__storage" id="tes">
+        <li class="image_of_storage"><a id="dataAnchor"><img id="dataImage" src="" alt="" /></a></li>
+        <li class="image_of_storage"><a id="dataAnchor"><img id="dataImage" src="" alt="" /></a></li>
+        <li class="image_of_storage"><a id="dataAnchor"><img id="dataImage" src="" alt="" /></a></li>
+        <li class="image_of_storage"><a id="dataAnchor"><img id="dataImage" src="" alt="" /></a></li>
+        <li class="image_of_storage"><a id="dataAnchor"><img id="dataImage" src="" alt="" /></a></li>
+      </ul>
+    </div>
+    <br>
+    <div>
+    </div>
+  </div>
+
+
+  <script src="assets/js/nav-btn.js"></script>
+  <script type="text/javascript">
+    let data = {
+      nama: [
+        'assets/img/desk.jpg',
+        'assets/img/walpaper.jpg',
+        'assets/img/desk.jpg',
+        'assets/img/desk.jpg',
+        'assets/img/desk.jpg',
+      ]
+    }
+
+    let dataImage;
+    let dataAnchor;
+    let dataNameLength = data.nama.length;
+
+    for (let i = 0; i < dataNameLength; i++) {
+      dataImage = document.querySelectorAll('#dataImage')[i];
+      dataAnchor = document.querySelectorAll('#dataAnchor')[i];
+      dataImage.src = data.nama[i];
+      dataAnchor.href = data.nama[i];
+    }
+
+  </script>
+</body>
+
+</html>

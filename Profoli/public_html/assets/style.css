@@ -5,34 +5,62 @@
     --color-white: #f2f2f2;
     --color-dark: #333333;
     --color-white-default: #fff;
-    --dollong-color-theme: #44eeb5;
-    --dollong-color-theme-rgba: rgba(68, 238, 181, .4);
+    --dollong-color-theme: #f16d66;
+    --dollong-color-theme-cover: #cc5c56;
+    --dollong-color-theme-rgba: rgba(241, 109, 102, .4);
     --dollong-color-neumorphism: #eeeeee;
     --dollong-color-dark: #052e21;
+    --dollong-color-gray-smooth: #cccccc;
 
     --dollong-box-shadow: 6px 6px 15px #cacaca,
     -6px -6px 18px #ffffff;
+    --dollong-shadow-cover: 8px 8px 16px #cd5d57,
+             -8px -8px 16px #ff7d75;
+    --dollong-shadow-cover-hover: 5px 5px 12px #cd5d57,
+             -8px -8px 16px #ff7d75;
 
     /* theme */
+    --color-text: var(--color-white);
     --color-theme: var(--dollong-color-theme);
+    --color-text-neumorphism: var(--dollong-color-neumorphism);
     --background-theme: var(--dollong-color-neumorphism);
+    --shadow-header: var(--dollong-color-gray-smooth);
     --shadow-of-neumorphism: var(--dollong-box-shadow);
+    --shadow-cover-theme: var(--dollong-shadow-cover);
+    --shadow-cover-theme-hover: var(--dollong-shadow-cover-hover);
+    --effect-real-button: var(--dollong-color-theme-cover);
 }
 
 .click-effect:hover { 
 	transform: translateY(2px);
 }
 
+.click-effect-s:hover { 
+    transform: translateY(6px);
+}
+
+
 html {
     font-family: 'Poppins', Arial, Sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
     background-color: var(--background-theme);
 }
 
-h1, h2, h3, h4, h5, h6 { font-family: 'Righteous' }
+h1, h2, h3, h4, h5, h6, .Logo, .font-righteous { font-family: 'Righteous' }
 h1 { font-size: 2.25em;line-height: 48px; }
+.Logo { 
+    color: var(--color-theme);
+    font-size: 1.3em;
+}
+.btn-default {
+    color: var(--color-white);
+    background-color: var(--color-theme);
+    padding: 6px 20px;
+    border-radius: 13px;
+}
 /* 
 #navi { display: none; } */
 #navi {
@@ -66,13 +94,11 @@ h1 { font-size: 2.25em;line-height: 48px; }
 
 #navi ul li.active {
     background-color: var(--dollong-color-theme);
-    box-shadow:  9px 9px 18px #3aca9a,
-             -9px -9px 18px #4effd0;
+    box-shadow:  var(--shadow-cover-theme);
 }
 
 #navi ul li.active:hover {
-	box-shadow:  3px 3px 10px #3aca9a,
-             -3px -3px 10px #4effd0;
+	box-shadow: var(--shadow-cover-theme-hover);
 }
 
 #navi ul li.active a { color: var(--color-white) }
@@ -154,8 +180,8 @@ h1 { font-size: 2.25em;line-height: 48px; }
     flex-direction: column;
     cursor: pointer;
     background-color: #eeeeee;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 40px;
     border-radius: 10px;
     box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
       7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9,

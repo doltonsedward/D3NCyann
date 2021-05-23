@@ -1,0 +1,7 @@
+header {
+	box-shadow: 0 0 20px var(--shadow-header);
+}
+
+.detail__index {
+	margin-right: 30px;
+}
