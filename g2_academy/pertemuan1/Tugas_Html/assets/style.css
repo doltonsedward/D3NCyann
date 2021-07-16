@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+:root {
+    --pure-gray: #808080;
+    --gray: #d0cecf;
+    --orange: #ea8745;
+
+    --cv-theme: var(--gray);
+    --cv-shadow: var(--pure-gray);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { font-family: 'Poppins', Arial, Helvetica, sans-serif }
+body {
+    background-color: var(--cv-theme);
+}
+
+ul:not(.primitive) li { 
+    list-style: none;
+    margin-left: 0;
+}
+
+a { color: black; } 
+
+li { 
+    margin-left: 20px; 
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+/* shortcut */
+.clr-orange { color: var(--orange) }
+.pt-70 { padding-top: 70px }
+.pb-35 { padding-bottom: 35px; }
+.pb-150 { padding-bottom: 150px; }
+.plr-50 {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.plr-30 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+/* tutup */
+
+#myCv {
+    display: flex;
+    width: 900px;
+    margin: 30px auto;
+    box-shadow: 0 0 100px var(--cv-shadow);
+}
+
+.myProfile {
+    width: 100%;
+    height: 400px;
+}
+
+.myProfile img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.side h2 {
+    margin-bottom: 10px;
+    padding: 3px 0;
+    border-bottom: 1px solid gray;
+}
+
+.left.side {
+    overflow-wrap: anywhere;
+}
+
+.right.side {
+    background-color: whitesmoke;
+}
