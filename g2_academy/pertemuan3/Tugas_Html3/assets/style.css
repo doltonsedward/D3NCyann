@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab');
+
+:root {
+    --dark-blue: #1e2537;
+    --gray: #e2e2e2;
+    --orange: #ea8745;
+    --white: #fff;
+
+    --cv-theme: var(--dark-blue);
+    --cv-in-theme: var(--white);
+    --cv-profile: var(--white);
+    --cv-disclaimer: var(--white);
+    --cv-shadow: var(--pure-gray);
+    --cv-boxAttr: var(--gray);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { 
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 13.8px;
+    user-select: none
+}
+body { background-color: black }
+ul:not(.primitive) li { 
+    list-style: none;
+    margin-left: 0;
+}
+
+a { color: black;text-decoration: none } 
+i { color: var(--cv-theme) }
+li { 
+    margin-left: 20px; 
+}
+
+strong,
+h1, h2, h3, h4, h5, h6 { text-transform: uppercase }
+h1, h2, h3, h4, h5, h6 { 
+    font-family: 'Zilla Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+}
+
+strong { font-weight: bold }
+
+.formLogic {
+    padding: 20px 18px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color: red;
+}
+
+/* shortcut */
+.d-flex { 
+    display: flex; 
+}
+.size.icon {
+    font-size: 20px;
+}
+.toRight {
+    display: flex;
+    align-items: right;
+    margin-left: 20px;
+}
+.align-right {
+    text-align: right;
+}
+.floatLeft {
+    float: right;
+    order: 2;
+}
+
+.op-low { opacity: .5; }
+.clr-white { color: var(--white) }
+.pt-70 { padding-top: 70px }
+.pb-35 { padding-bottom: 35px }
+.pb-150 { padding-bottom: 150px }
+.ml-10 { margin-left: 10px }
+.mr-20 { margin-right: 20px }
+.plr-50 {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.plr-30 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+/* tutup */
+h2:not(.tittleSkill) { 
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2.5px dotted var(--cv-theme) 
+}
+
+.tittleSkill { 
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2.5px solid var(--cv-theme) 
+}
+
+#myCv {
+    background-color: var(--cv-theme);
+    width: 900px;
+    margin: 0 auto;
+    padding: 40px 0;
+    box-shadow: 0 0 100px var(--cv-shadow);
+}
+
+.disclaimer { background-color: var(--cv-disclaimer) }
+.disclaimer p {
+    font-family: 'Zilla Slab';
+    text-transform: uppercase;
+    padding: 3px 20px;
+    display: inline-flex;
+    background-color: var(--dark-blue);
+    margin-left: 12%;
+}
+
+.heading {
+    width: 400px;
+    position: relative;
+    left: 285px;
+    line-height: 40px;
+}
+
+.inner_myCv {
+    width: 100%;
+    background-color: var(--cv-in-theme);
+}
+
+.profile, .image { border-radius: 50% }
+.profile {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: var(--cv-profile);
+    margin: -100px 0 0 auto;
+    text-align: center;
+    z-index: 10;
+}
+
+.profile .image {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.profile .image img { 
+    width: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+
+.myProfile {
+    width: 100%;
+    height: 400px;
+}
+
+.myProfile img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.side { padding: 15px }
+.left.side, .right.side { overflow-wrap: anywhere }
+.left.side { text-align: right }
+
+.boxAttr {
+    padding: 20px;
+    width: 100%;
+    background-color: var(--cv-boxAttr);
+}
+
+.skill-attr li, .skill-point li {
+    margin-bottom: 8px;
+}
+
+.icon { 
+    padding: 8px;
+    color: var(--white);
+    background-color: var(--cv-theme);
+    border-radius: 3px;
+}
+
+.skill-point i { color: var(--cv-theme) }
+.boxAttr ul li div { width: 280px }
