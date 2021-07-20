@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ini judul</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <form action="javascript:void(0)" id="calc" name="calc">
+        <div class="bxOutput">
+            <input type="text" name="output" readonly>
+            <div id="valueEqual">0</div>
+        </div>
+        <ul>
+            <li class="d-grid" >
+                <button class="clear" onclick="document.calc.output.value = ''">C</button>
+                <button>CE</button>
+                <button onclick="">del</button>
+            </li>
+            <li class="d-grid">
+                <button onclick="autoFill('7')">7</button>
+                <button onclick="autoFill('8')">8</button>
+                <button onclick="autoFill('9')">9</button>
+                <button onclick="autoFill(' / ')">/</button>
+                
+            </li>
+            <li class="d-grid">
+                <button onclick="autoFill('4')">4</button>
+                <button onclick="autoFill('5')">5</button>
+                <button onclick="autoFill('6')">6</button>
+                <button onclick="autoFill(' * ')">x</button>
+                
+            </li>
+            <li class="d-grid">
+                <button onclick="autoFill('1')">1</button>
+                <button onclick="autoFill('2')">2</button>
+                <button onclick="autoFill('3')">3</button>
+                <button onclick="autoFill(' - ')">-</button>
+                
+            </li>
+            <li class="d-grid">
+                <button onclick="autoFill(' + ')">+</button>
+                <button onclick="autoFill('0')">0</button>
+                <button onclick="autoFill('.')">,</button>
+                <button onclick="equal()">=</button>
+            </li>
+        </ul>
+    </form>
+
+    <script src="assets/logic.js"></script>
+</body>
+</html>
