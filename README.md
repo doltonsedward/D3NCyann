@@ -1,7 +1,10 @@
 <h2>Hello, I'm Doltons Edward Nicholas!</h2> 
 
-[![Linkedin: fajar](https://img.shields.io/badge/-Doltons%20Edward-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/doltons-edward-nicholas-p-1498a7208/)](https://www.linkedin.com/in/ahmad-fajar)
+
+[![Linkedin: Doltons](https://img.shields.io/badge/-Doltons%20Edward-blue?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/doltons-edward-nicholas-p-1498a7208/)](https://www.linkedin.com/in/doltons-edward-nicholas-p-1498a7208/)
+[![Instagram: Doltons](https://img.shields.io/badge/-Profol_e-DD2A7D?style=flat&logo=Instagram&logoColor=white&link=https://www.linkedin.com/in/doltons-edward-nicholas-p-1498a7208/)](https://www.linkedin.com/in/doltons-edward-nicholas-p-1498a7208/)
 ![GitHub followers](https://img.shields.io/github/followers/secondl1f3?label=Follow&style=social)
+![Linkedin: fajar](https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&link=)
 
 <!-- ![Twitter Follow](https://img.shields.io/twitter/follow/fjr_notes?label=Follow)
 [![Linkedin: fajar](https://img.shields.io/badge/-ahmad%20fajar-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/ahmad-fajar/)](https://www.linkedin.com/in/ahmad-fajar)
